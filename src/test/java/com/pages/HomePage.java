@@ -27,6 +27,7 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+
     @FindBy(css = "#menu-item-76") private WebElement rossLogoTopPage;
     @FindBy(css = "#menu-item-77") private WebElement ddsLogoTopPage;
     @FindBy(xpath = "//img[@src='https://corp.rossstores.com/wp-content/uploads/2021/10/logo-ross.svg']") private WebElement rossLogoMidPage;
@@ -403,134 +404,6 @@ public class HomePage extends BasePage {
         Assert.assertEquals(actualFooterRossLinkTittle, expectedFooterRossLinkTittle);
         System.out.println("Ross Tittle passed");
         driver.navigate().back();
-
-        //Thread.sleep(1000);
-
-//        scrollIntoViewJS(pageFooter);
-//        WebElement footerDDs = footerDDsLink;
-//        JavascriptExecutor jsexecutor1 = ((JavascriptExecutor) DriverManager.getDriver());
-//        waitForVisibility(footerDDs);
-//        jsexecutor1.executeScript("arguments[0].click();", footerDDs);
-//        Thread.sleep(2000);
-////
-//        //click(footerDDsLink);
-//        String actualFooterDDsLinkUrl = driver.getCurrentUrl();
-//        System.out.println(actualFooterDDsLinkUrl);
-//        String expectedFooterDDsLinkUrl = "https://www.ddsdiscounts.com/";
-//        Assert.assertEquals(actualFooterDDsLinkUrl, expectedFooterDDsLinkUrl);
-//        System.out.println("DDS URL passed");
-//
-//        String actualFooterDDsLinkTittle = driver.getTitle();
-//        System.out.println(actualFooterDDsLinkTittle);
-//        String expectedFooterDDsLinkTittle = "Home";
-//        Assert.assertEquals(actualFooterDDsLinkTittle, expectedFooterDDsLinkTittle);
-//        System.out.println("DDS Tittle passed");
-//        driver.navigate().back();
-//
-//        WebElement footerPrivacy = footerPrivacyLink;
-//        JavascriptExecutor jsexecutor2 = ((JavascriptExecutor) DriverManager.getDriver());
-//        waitForVisibility(footerPrivacyLink);
-//        jsexecutor2.executeScript("arguments[0].click();", footerPrivacy);
-//
-//        //click(footerPrivacyLink);
-//        String actualFooterPrivacyLinkUrl = driver.getCurrentUrl();
-//        System.out.println(actualFooterPrivacyLinkUrl);
-//        String expectedFooterPrivacyLinkUrl = "https://www.rossstores.com/privacy-policy/";
-//        Assert.assertEquals(actualFooterPrivacyLinkUrl, expectedFooterPrivacyLinkUrl);
-//        System.out.println("Assert URL passed");
-//
-//        String actualFooterPrivacyLinkTittle = driver.getTitle();
-//        System.out.println(actualFooterPrivacyLinkTittle);
-//        String expectedFooterPrivacyLinkTittle = "Privacy Policy";
-//        Assert.assertEquals(actualFooterPrivacyLinkTittle, expectedFooterPrivacyLinkTittle);
-//        System.out.println("Assert Tittle passed");
-//        driver.navigate().back();
-//
-////        WebElement footerEqualEmploy = footerEqualEmploymentLink;
-////        JavascriptExecutor jsexecutor3 = ((JavascriptExecutor) DriverManager.getDriver());
-////        waitForVisibility(footerEqualEmploymentLink);
-////        jsexecutor3.executeScript("arguments[0].click();", footerEqualEmploy);
-//
-//        click(footerEqualEmploymentLink);
-//        String actualFooterEqualEmployLinkUrl = driver.getCurrentUrl();
-//        System.out.println(actualFooterEqualEmployLinkUrl);
-//        String expectedFooterEqualEmployLinkUrl = "https://corp.rossstores.com/eeo/";
-//        Assert.assertEquals(actualFooterEqualEmployLinkUrl, expectedFooterEqualEmployLinkUrl);
-//        System.out.println("Assert URL passed");
-//
-//        String actualFooterEqualEmployLinkTittle = driver.getTitle();
-//        System.out.println(actualFooterEqualEmployLinkTittle);
-//        String expectedFooterEqualEmployLinkTittle = "Equal Employment Opportunity (EEO) Policy";
-//        Assert.assertEquals(actualFooterEqualEmployLinkTittle, expectedFooterEqualEmployLinkTittle);
-//        System.out.println("Assert Tittle passed");
-//        driver.navigate().back();
-//
-//
-////        WebElement footerAccessibility = footerAccesssibilityLink;
-////        JavascriptExecutor jsexecutor4 = ((JavascriptExecutor) DriverManager.getDriver());
-////        waitForVisibility(footerAccesssibilityLink);
-////        jsexecutor4.executeScript("arguments[0].click();", footerAccessibility);
-//
-//        click(footerAccesssibilityLink);
-//        String actualFooterAccessibilityLinkUrl = driver.getCurrentUrl();
-//        System.out.println(actualFooterAccessibilityLinkUrl);
-//        String expectedFooterAccessibilityLinkUrl = "https://corp.rossstores.com/accessibility/";
-//        Assert.assertEquals(actualFooterAccessibilityLinkUrl, expectedFooterAccessibilityLinkUrl);
-//        System.out.println("Assert URL passed");
-//
-//        String actualFooterAccessibilityLinkTittle = driver.getTitle();
-//        System.out.println(actualFooterAccessibilityLinkTittle);
-//        String expectedFooterAccessibilityLinkTittle = "Accessibility";
-//        Assert.assertEquals(actualFooterAccessibilityLinkTittle, expectedFooterAccessibilityLinkTittle);
-//        System.out.println("Assert Tittle passed");
-//        driver.navigate().back();
-//
-////        WebElement footerContactUs = footerContactUsLink;
-////        JavascriptExecutor jsexecutor5 = ((JavascriptExecutor) DriverManager.getDriver());
-////        waitForVisibility(footerContactUsLink);
-////        jsexecutor5.executeScript("arguments[0].click();", footerContactUs);
-//
-//        click(footerContactUsLink);
-//        String actualFooterContactUsLinkUrl = driver.getCurrentUrl();
-//        System.out.println(actualFooterContactUsLinkUrl);
-//        String expectedFooterContactUsLinkUrl = "https://corp.rossstores.com/contact-us-corp/";
-//        Assert.assertEquals(actualFooterContactUsLinkUrl, expectedFooterContactUsLinkUrl);
-//        System.out.println("Assert URL passed");
-//
-//        String actualFooterContactUsLinkTittle = driver.getTitle();
-//        System.out.println(actualFooterContactUsLinkTittle);
-//        String expectedFooterContactUsLinkTittle = "Contact Us | Ross Stores, Inc.";
-//        Assert.assertEquals(actualFooterContactUsLinkTittle, expectedFooterContactUsLinkTittle);
-//        System.out.println("Assert Tittle passed");
-//        driver.navigate().back();
-//
-////        WebElement footerSiteMap = footerSiteMapLink;
-////        JavascriptExecutor jsexecutor6 = ((JavascriptExecutor) DriverManager.getDriver());
-////        waitForVisibility(footerSiteMapLink);
-////        jsexecutor6.executeScript("arguments[0].click();", footerSiteMap);
-//
-//        click(footerSiteMapLink);
-//        String actualFooterSiteMapLinkUrl = driver.getCurrentUrl();
-//        System.out.println(actualFooterSiteMapLinkUrl);
-//        String expectedFooterSiteMapLinkUrl = "https://corp.rossstores.com/sitemap/";
-//        Assert.assertEquals(actualFooterSiteMapLinkUrl, expectedFooterSiteMapLinkUrl);
-//        System.out.println("Assert URL passed");
-//
-//        String actualFooterSiteMapLinkTittle = driver.getTitle();
-//        System.out.println(actualFooterSiteMapLinkTittle);
-//        String expectedFooterSiteMapLinkTittle = "Sitemap";
-//        Assert.assertEquals(actualFooterSiteMapLinkTittle, expectedFooterSiteMapLinkTittle);
-//        System.out.println("Assert Tittle passed");
-//        driver.navigate().back();
-
-//        WebElement footerDoNotCookie = footerDoNotSellLink;
-//        JavascriptExecutor jsexecutor7 = ((JavascriptExecutor) DriverManager.getDriver());
-//        waitForVisibility(footerDoNotSellLink);
-//        jsexecutor7.executeScript("arguments[0].click();", footerDoNotCookie);
-
-//        click(footerDoNotSellLink);
-//        boolean oneTrustWindow = driver.findElement(By.cssSelector("#onetrust-consent-sdk")).isDisplayed();
-//        System.out.println(oneTrustWindow + " oneTrustWindow box is  displayed");
 
         return this;
     }

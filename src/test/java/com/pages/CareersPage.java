@@ -20,7 +20,7 @@ public class CareersPage extends BasePage{
     public CareersPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//ul[@id='menu-footer']") private WebElement pageFooter;
+
     @FindBy(xpath = "//li[@id='menu-item-48']") private WebElement investorPageLink;
 
     @FindBy(xpath = "//div[@id='onetrust-close-btn-container']//button[@aria-label='Close']") private WebElement closeCookieButton;
