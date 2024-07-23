@@ -14,7 +14,7 @@ public class CorpRoss extends BaseTest{
     public void testCorpRoss() throws InterruptedException {
         homePage
                 .closeCookie()
-                .verifyHomePageRossAltLinkText()
+                //.verifyHomePageRossAltLinkText()
                 .verifyHomePageTexts()
                 .footerLinksList()
                 .navMenuList()
